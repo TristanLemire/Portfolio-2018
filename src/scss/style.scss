@@ -120,7 +120,7 @@ main {
 .right__menu {
   position: absolute;
   top: 50%;
-  right: -8px;
+  right: -5px;
   transform: translateY(-50%) rotate(90deg);
   text-align: center;
   background-color: $bgcolor;
@@ -157,7 +157,7 @@ main {
 .left__menu {
   position: absolute;
   top: 50%;
-  left: 4px;
+  left: 8px;
   transform: translateY(-50%) rotate(-90deg);
   text-align: center;
   background-color: $bgcolor;
@@ -259,6 +259,247 @@ main {
         z-index: 11;
       }
     }
+  }
+
+  .feeddiv {
+    position: absolute;
+    height: calc(100vh - 110px);
+    width: calc(100% - 160px);
+    top: 55px;
+    left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.8s;
+    z-index: 0;
+
+    .cv {
+      margin: 5px;
+      color: $fontcolor;
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      font-size: 1.75vw;
+      letter-spacing: 0.05em;
+      line-height: 1.3;
+      padding: 10px 15px 10px 15px;
+      border: solid $fontcolor 1px;
+      text-decoration: NONE;
+  
+      @include phone {
+        font-size: 0.75em;
+        text-align: left;
+      }
+    }
+  
+    p {
+      color: $fontcolor;
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      font-size: 2vw;
+      letter-spacing: 0.05em;
+      line-height: 1.3;
+      padding-bottom: 15px;
+  
+      @include phone {
+        font-size: 0.75em;
+        text-align: left;
+      }
+    }
+  
+    a {
+      color: $fontcolor;
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      font-size: 2vw;
+      letter-spacing: 0.05em;
+      line-height: 1.3;
+      padding-bottom: 15px;
+      text-decoration: none;
+      cursor: pointer;
+  
+      @include phone {
+        font-size: 0.75em;
+      }
+    }
+  
+    span {
+      border-bottom: $fontcolor solid 1px;
+    }
+  }
+  
+  
+  h2 {
+    color: $fontcolor;
+    font-family: "Playfair Display", serif;
+    width: 80%;
+    font-weight: 400;
+    font-size: 5vw;
+    letter-spacing: 0.05em;
+    line-height: 1.3;
+    padding-bottom: 15px;
+  }
+  
+  .is-visible {
+    opacity: 1;
+    z-index: 11;
+  }
+
+  .hairfaxdiv {
+    position: absolute;
+    height: calc(100vh - 110px);
+    width: calc(100% - 160px);
+    top: 55px;
+    left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.8s;
+    z-index: 0;
+
+    .cv {
+      margin: 5px;
+      color: $fontcolor;
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      font-size: 1.75vw;
+      letter-spacing: 0.05em;
+      line-height: 1.3;
+      padding: 10px 15px 10px 15px;
+      border: solid $fontcolor 1px;
+      text-decoration: NONE;
+  
+      @include phone {
+        font-size: 0.75em;
+        text-align: left;
+      }
+    }
+  
+    p {
+      color: $fontcolor;
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      font-size: 2vw;
+      letter-spacing: 0.05em;
+      line-height: 1.3;
+      padding-bottom: 15px;
+  
+      @include phone {
+        font-size: 0.75em;
+        text-align: left;
+      }
+    }
+  
+    a {
+      color: $fontcolor;
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      font-size: 2vw;
+      letter-spacing: 0.05em;
+      line-height: 1.3;
+      padding-bottom: 15px;
+      text-decoration: none;
+      cursor: pointer;
+  
+      @include phone {
+        font-size: 0.75em;
+      }
+    }
+  
+    span {
+      border-bottom: $fontcolor solid 1px;
+    }
+  }
+
+  .kapdiv {
+    position: absolute;
+    height: calc(100vh - 110px);
+    width: calc(100% - 160px);
+    top: 55px;
+    left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.8s;
+    z-index: 0;
+
+    .cv {
+      margin: 5px;
+      color: $fontcolor;
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      font-size: 1.75vw;
+      letter-spacing: 0.05em;
+      line-height: 1.3;
+      padding: 10px 15px 10px 15px;
+      border: solid $fontcolor 1px;
+      text-decoration: NONE;
+  
+      @include phone {
+        font-size: 0.75em;
+        text-align: left;
+      }
+    }
+  
+    p {
+      color: $fontcolor;
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      font-size: 2vw;
+      letter-spacing: 0.05em;
+      line-height: 1.3;
+      padding-bottom: 15px;
+  
+      @include phone {
+        font-size: 0.75em;
+        text-align: left;
+      }
+    }
+  
+    a {
+      color: $fontcolor;
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      font-size: 2vw;
+      letter-spacing: 0.05em;
+      line-height: 1.3;
+      padding-bottom: 15px;
+      text-decoration: none;
+      cursor: pointer;
+  
+      @include phone {
+        font-size: 0.75em;
+      }
+    }
+  
+    span {
+      border-bottom: $fontcolor solid 1px;
+    }
+  }
+  
+  
+  h2 {
+    color: $fontcolor;
+    font-family: "Playfair Display", serif;
+    width: 80%;
+    font-weight: 400;
+    font-size: 5vw;
+    letter-spacing: 0.05em;
+    line-height: 1.3;
+    padding-bottom: 15px;
+  }
+  
+  .is-visible {
+    opacity: 1;
+    z-index: 11;
   }
 
   .aboutdiv {
@@ -510,5 +751,6 @@ main {
         text-shadow: 0 0 7.5px rgba(210, 180, 140, 0.5);
       }
     }
-  }
+  }  
 }
+

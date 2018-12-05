@@ -35,6 +35,15 @@ var time = ladate.getHours();
 var gram = document.getElementById("gram");
 var easter = document.getElementById("easter");
 var blackscreen = document.getElementById("blackscreen");
+var feeddiv = document.getElementById("feeddiv");
+let feedbar = document.getElementById("feed__bar");
+let feedlien = document.getElementById("feedlien");
+var hairfaxdiv = document.getElementById("hairfaxdiv");
+let hairfaxbar = document.getElementById("hairfax__bar");
+let hairfaxlien = document.getElementById("hairfaxlien");
+var kapdiv = document.getElementById("kapdiv");
+let kapbar = document.getElementById("kap__bar");
+let kaplien = document.getElementById("kaplien");
 
 if (time >= 19 && time <= 7) {
   nightmode.classList.toggle("is-night");
@@ -90,6 +99,9 @@ h2top.addEventListener("click", function() {
   aboutdiv.classList.remove("is-visible");
   h1home.classList.add("is-hidden");
   contactdiv.classList.remove("is-visible");
+  feeddiv.classList.remove("is-visible");
+  hairfaxdiv.classList.remove("is-visible");
+  kapdiv.classList.remove("is-visible");
   setTimeout(function() {
     projetdiv.classList.add("is-visible");
   }, 800);
@@ -99,6 +111,9 @@ logo.addEventListener("click", function() {
   aboutdiv.classList.remove("is-visible");
   contactdiv.classList.remove("is-visible");
   projetdiv.classList.remove("is-visible");
+  feeddiv.classList.remove("is-visible");
+  hairfaxdiv.classList.remove("is-visible");
+  kapdiv.classList.remove("is-visible");
   setTimeout(function() {
     h1home.classList.remove("is-hidden");
   }, 800);
@@ -108,6 +123,9 @@ h2left.addEventListener("click", function() {
   h1home.classList.add("is-hidden");
   contactdiv.classList.remove("is-visible");
   projetdiv.classList.remove("is-visible");
+  feeddiv.classList.remove("is-visible");
+  hairfaxdiv.classList.remove("is-visible");
+  kapdiv.classList.remove("is-visible");
   setTimeout(function() {
     aboutdiv.classList.add("is-visible");
   }, 800);
@@ -117,8 +135,47 @@ h2right.addEventListener("click", function() {
   h1home.classList.add("is-hidden");
   aboutdiv.classList.remove("is-visible");
   projetdiv.classList.remove("is-visible");
+  feeddiv.classList.remove("is-visible");
+  hairfaxdiv.classList.remove("is-visible");
+  kapdiv.classList.remove("is-visible");
   setTimeout(function() {
     contactdiv.classList.add("is-visible");
+  }, 800);
+});
+
+projet1.addEventListener("click", function() {
+  h1home.classList.add("is-hidden");
+  aboutdiv.classList.remove("is-visible");
+  projetdiv.classList.remove("is-visible");
+  contactdiv.classList.remove("is-visible");
+  hairfaxdiv.classList.remove("is-visible");
+  kapdiv.classList.remove("is-visible");
+  setTimeout(function() {
+    feeddiv.classList.add("is-visible");
+  }, 800);
+});
+
+projet2.addEventListener("click", function() {
+  h1home.classList.add("is-hidden");
+  aboutdiv.classList.remove("is-visible");
+  projetdiv.classList.remove("is-visible");
+  contactdiv.classList.remove("is-visible");
+  feeddiv.classList.remove("is-visible");
+  kapdiv.classList.remove("is-visible");
+  setTimeout(function() {
+    hairfaxdiv.classList.add("is-visible");
+  }, 800);
+});
+
+projet3.addEventListener("click", function() {
+  h1home.classList.add("is-hidden");
+  aboutdiv.classList.remove("is-visible");
+  projetdiv.classList.remove("is-visible");
+  contactdiv.classList.remove("is-visible");
+  feeddiv.classList.remove("is-visible");
+  hairfaxdiv.classList.remove("is-visible");
+  setTimeout(function() {
+    kapdiv.classList.add("is-visible");
   }, 800);
 });
 
@@ -126,6 +183,9 @@ barOnMouseOver(topbar, h2top);
 barOnMouseOver(rightbar, h2right);
 barOnMouseOver(leftbar, h2left);
 barOnMouseOver(cvbar, cv);
+barOnMouseOver(feedbar, feedlien);
+barOnMouseOver(hairfaxbar, hairfaxlien);
+barOnMouseOver(kapbar, kaplien);
 
 setTimeout(function() {
   easter.classList.add("is-easter");
