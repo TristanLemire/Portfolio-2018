@@ -1,0 +1,24 @@
+.reseau {
+  position: absolute;
+  top: 25px;
+  right: 32.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 20vh;
+  background-color: $bgcolor;
+  padding: 10px;
+
+  &.is-night {
+    background-color: $nightbgcolor;
+  }
+
+  a {
+    color: $fontcolor;
+    text-decoration: none;
+
+    i {
+      font-size: 14px;
+    }
+  }
+}

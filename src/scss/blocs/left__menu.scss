@@ -1,0 +1,36 @@
+.left__menu {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%) rotate(-90deg);
+  text-align: center;
+  background-color: $bgcolor;
+  padding: 10px;
+
+  &.is-night {
+    background-color: $nightbgcolor;
+  }
+
+  .left__bar {
+    position: absolute;
+    top: 15.5px;
+    height: 3px;
+    width: 0;
+    background-color: $barcolor;
+    transition: width 1s;
+    z-index: -1;
+
+    &.is-large {
+      width: 65px;
+    }
+  }
+
+  h2 {
+    color: $fontcolor;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 5px;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}

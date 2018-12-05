@@ -1,0 +1,24 @@
+.logo {
+  position: absolute;
+  top: 27px;
+  left: 20px;
+  height: 4vh;
+  padding: 10px;
+  color: $fontcolor;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.logo__background {
+  position: absolute;
+  top: 27px;
+  left: 26px;
+  height: 4vh;
+  width: 52px;
+  background-color: $bgcolor;
+  padding: 10px;
+
+  &.is-night {
+    background-color: $nightbgcolor;
+  }
+}

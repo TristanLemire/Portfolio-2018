@@ -1,0 +1,18 @@
+.main__content {
+  height: 100vh;
+  width: 100%;
+  background-color: $bgcolor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.is-night {
+    background-color: $nightbgcolor;
+  }
+
+  .border__white {
+    height: calc(100vh - 100px);
+    width: calc(100% - 100px);
+    border: $fontcolor solid 1px;
+  }
+}

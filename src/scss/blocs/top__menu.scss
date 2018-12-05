@@ -1,0 +1,36 @@
+.top__menu {
+  position: absolute;
+  left: 50%;
+  top: 32px;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: $bgcolor;
+  padding: 10px;
+
+  .top__bar {
+    position: absolute;
+    top: 15.5px;
+    height: 3px;
+    width: 0;
+    background-color: $barcolor;
+    transition: width 1s;
+    z-index: -1;
+
+    &.is-large {
+      width: 80px;
+    }
+  }
+
+  &.is-night {
+    background-color: $nightbgcolor;
+  }
+
+  h2 {
+    color: $fontcolor;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 5px;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
