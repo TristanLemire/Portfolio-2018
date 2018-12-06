@@ -45,7 +45,7 @@ var kapdiv = document.getElementById("kapdiv");
 let kapbar = document.getElementById("kap__bar");
 let kaplien = document.getElementById("kaplien");
 
-if (time >= 19 && time <= 7) {
+if (time >= 19 || time <= 7) {
   nightmode.classList.toggle("is-night");
   logobg.classList.toggle("is-night");
   topmenu.classList.toggle("is-night");

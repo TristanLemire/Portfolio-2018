@@ -4,15 +4,16 @@
   width: 200vw;
   background-color: rgb(5, 5, 5);
   position: absolute;
-  z-index: 12;
+  z-index: 11;
   transition: 2s;
 
   &.is-moved {
     transform: translateX(209vh);
+    
   }
 
   @include phone {
-    width: 600vw;
+    transition: 4s;
 
     &.is-moved {
       transform: translateX(100%);
