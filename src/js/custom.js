@@ -7,6 +7,18 @@ function barOnMouseOver(bar, h2) {
   });
 }
 
+function blurOnMouseOver(over, other1, other2) {
+  over.addEventListener("mouseover", function() {
+    other1.classList.add("is-not-blur");
+    other2.classList.add("is-not-blur");
+  });
+  over.addEventListener("mouseout", function() {
+    other1.classList.remove("is-not-blur");
+    other2.classList.remove("is-not-blur");
+  });
+}
+
+
 let topbar = document.getElementById("top__bar");
 let h2top = document.getElementById("h2__top");
 let rightbar = document.getElementById("right__bar");
@@ -55,32 +67,9 @@ if (time >= 19 || time <= 7) {
   maincontent.classList.toggle("is-night");
 }
 
-projet1.addEventListener("mouseover", function() {
-  projet2.classList.add("is-not-blur");
-  projet3.classList.add("is-not-blur");
-});
-projet1.addEventListener("mouseout", function() {
-  projet2.classList.remove("is-not-blur");
-  projet3.classList.remove("is-not-blur");
-});
-
-projet2.addEventListener("mouseover", function() {
-  projet1.classList.add("is-not-blur");
-  projet3.classList.add("is-not-blur");
-});
-projet2.addEventListener("mouseout", function() {
-  projet1.classList.remove("is-not-blur");
-  projet3.classList.remove("is-not-blur");
-});
-
-projet3.addEventListener("mouseover", function() {
-  projet1.classList.add("is-not-blur");
-  projet2.classList.add("is-not-blur");
-});
-projet3.addEventListener("mouseout", function() {
-  projet2.classList.remove("is-not-blur");
-  projet1.classList.remove("is-not-blur");
-});
+blurOnMouseOver(projet1,projet2,projet3);
+blurOnMouseOver(projet2,projet1,projet3);
+blurOnMouseOver(projet3,projet2,projet1);
 
 nightmode.addEventListener("click", function() {
   blackscreen.classList.toggle("is-moved");
