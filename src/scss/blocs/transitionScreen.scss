@@ -12,7 +12,6 @@
   }
 
   @include phone {
-    transition: 2s;
     width: 600vw;
 
     &.is-moved {
