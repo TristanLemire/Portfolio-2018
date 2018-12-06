@@ -13,7 +13,7 @@
 
   @include phone {
     transition: 2s;
-    width: 300vw;
+    width: 600vw;
 
     &.is-moved {
       transform: translateX(100%);
