@@ -81,7 +81,7 @@ nightmode.addEventListener("click", function() {
     leftmenu.classList.toggle("is-night");
     reseau.classList.toggle("is-night");
     maincontent.classList.toggle("is-night");
-  }, 550);
+  }, 525);
 });
 
 h2top.addEventListener("click", function() {

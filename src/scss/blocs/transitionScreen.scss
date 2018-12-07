@@ -8,12 +8,12 @@
   transition: 2s;
 
   &.is-moved {
-    transform: translateX(209vh);
+    transform: translateX(100%);
     
   }
 
   @include phone {
-    transition: 4s;
+    transition: 2s;
 
     &.is-moved {
       transform: translateX(100%);
