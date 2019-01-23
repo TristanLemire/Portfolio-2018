@@ -6,6 +6,8 @@
   text-align: center;
   background-color: $bgcolor;
   padding: 10px;
+  transition: .5s;
+
 
   &.is-night {
     background-color: $nightbgcolor;

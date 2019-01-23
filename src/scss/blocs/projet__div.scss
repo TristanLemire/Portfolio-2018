@@ -19,7 +19,8 @@
   }
 
   li:nth-child(1),
-  li:nth-child(2) {
+  li:nth-child(2),
+  li:nth-child(3) {
     padding-bottom: 20px;
   }
 
@@ -34,7 +35,7 @@
       letter-spacing: 0.05em;
       line-height: 1.3;
       text-shadow: none;
-      color: tan;
+      color: $fontcolor;
 
       transition: 1s;
 
@@ -44,6 +45,9 @@
       }
     }
   }  
+
+
+
 }
 
 

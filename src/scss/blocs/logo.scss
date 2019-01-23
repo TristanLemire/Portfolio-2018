@@ -5,9 +5,10 @@
   height: 4vh;
   width: 7.3vh;
   padding: 10px;
-  color: $fontcolor;
-  z-index: 10;
+  fill: $fontcolor;
+  z-index: 1 ;
   cursor: pointer;
+  
 }
 
 .logo__background {
@@ -18,6 +19,8 @@
   width: 7.3vh;
   background-color: $bgcolor;
   padding: 10px;
+  transition: .5s;
+
 
   &.is-night {
     background-color: $nightbgcolor;

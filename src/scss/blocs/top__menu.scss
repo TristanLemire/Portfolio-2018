@@ -6,6 +6,8 @@
   text-align: center;
   background-color: $bgcolor;
   padding: 10px;
+  transition: .5s;
+
 
   .top__bar {
     position: absolute;
@@ -17,7 +19,7 @@
     z-index: -1;
 
     &.is-large {
-      width: 80px;
+      width: 95px;
     }
   }
 

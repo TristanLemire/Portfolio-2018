@@ -6,6 +6,8 @@
   text-align: center;
   background-color: $bgcolor;
   padding: 10px;
+  transition: .5s;
+
 
   &.is-night {
     background-color: $nightbgcolor;
@@ -31,6 +33,6 @@
     letter-spacing: 5px;
     font-size: 0.75em;
     text-transform: uppercase;
-    cursor: pointer;
+    cursor: pointer;  
   }
 }

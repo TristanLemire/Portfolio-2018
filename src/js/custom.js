@@ -1,3 +1,4 @@
+
 function barOnMouseOver(bar, h2) {
   h2.addEventListener("mouseover", function() {
     bar.classList.add("is-large");
@@ -7,14 +8,16 @@ function barOnMouseOver(bar, h2) {
   });
 }
 
-function blurOnMouseOver(over, other1, other2) {
+function blurOnMouseOver(over, other1, other2,other3) {
   over.addEventListener("mouseover", function() {
     other1.classList.add("is-not-blur");
     other2.classList.add("is-not-blur");
+    other3.classList.add('is-not-blur');
   });
   over.addEventListener("mouseout", function() {
     other1.classList.remove("is-not-blur");
     other2.classList.remove("is-not-blur");
+    other3.classList.remove('is-not-blur');
   });
 }
 
@@ -26,7 +29,7 @@ let h2right = document.getElementById("h2__right");
 let leftbar = document.getElementById("left__bar");
 let h2left = document.getElementById("h2__left");
 let h1home = document.getElementById("h1home");
-let logo = document.getElementById("logo");
+let logo = document.querySelector(".logo");
 let aboutdiv = document.getElementById("aboutdiv");
 let cvbar = document.getElementById("cv__bar");
 let cv = document.getElementById("cv");
@@ -42,10 +45,12 @@ let projetdiv = document.getElementById("projetdiv");
 let projet1 = document.getElementById("projet1");
 let projet2 = document.getElementById("projet2");
 let projet3 = document.getElementById("projet3");
+let projet4= document.getElementById("projet4");
 var ladate = new Date();
 var time = ladate.getHours();
 var gram = document.getElementById("gram");
 var easter = document.getElementById("easter");
+var old = document.getElementById("old");
 var blackscreen = document.getElementById("blackscreen");
 var feeddiv = document.getElementById("feeddiv");
 let feedbar = document.getElementById("feed__bar");
@@ -56,6 +61,9 @@ let hairfaxlien = document.getElementById("hairfaxlien");
 var kapdiv = document.getElementById("kapdiv");
 let kapbar = document.getElementById("kap__bar");
 let kaplien = document.getElementById("kaplien");
+let geekdiv = document.getElementById("geekdiv");
+let geekbar = document.getElementById("geek__bar");
+let geeklien = document.getElementById("geeklien");
 
 if (time >= 19 || time <= 7) {
   nightmode.classList.toggle("is-night");
@@ -67,9 +75,10 @@ if (time >= 19 || time <= 7) {
   maincontent.classList.toggle("is-night");
 }
 
-blurOnMouseOver(projet1,projet2,projet3);
-blurOnMouseOver(projet2,projet1,projet3);
-blurOnMouseOver(projet3,projet2,projet1);
+blurOnMouseOver(projet1,projet2,projet3,projet4);
+blurOnMouseOver(projet2,projet1,projet3,projet4);
+blurOnMouseOver(projet3,projet2,projet1,projet4);
+blurOnMouseOver(projet4,projet2,projet1,projet3);
 
 nightmode.addEventListener("click", function() {
   blackscreen.classList.toggle("is-moved");
@@ -91,6 +100,7 @@ h2top.addEventListener("click", function() {
   feeddiv.classList.remove("is-visible");
   hairfaxdiv.classList.remove("is-visible");
   kapdiv.classList.remove("is-visible");
+  geekdiv.classList.remove('is-visible');
   setTimeout(function() {
     projetdiv.classList.add("is-visible");
   }, 800);
@@ -103,6 +113,7 @@ logo.addEventListener("click", function() {
   feeddiv.classList.remove("is-visible");
   hairfaxdiv.classList.remove("is-visible");
   kapdiv.classList.remove("is-visible");
+  geekdiv.classList.remove('is-visible');
   setTimeout(function() {
     h1home.classList.remove("is-hidden");
   }, 800);
@@ -115,6 +126,7 @@ h2left.addEventListener("click", function() {
   feeddiv.classList.remove("is-visible");
   hairfaxdiv.classList.remove("is-visible");
   kapdiv.classList.remove("is-visible");
+  geekdiv.classList.remove('is-visible');
   setTimeout(function() {
     aboutdiv.classList.add("is-visible");
   }, 800);
@@ -127,6 +139,7 @@ h2right.addEventListener("click", function() {
   feeddiv.classList.remove("is-visible");
   hairfaxdiv.classList.remove("is-visible");
   kapdiv.classList.remove("is-visible");
+  geekdiv.classList.remove('is-visible');
   setTimeout(function() {
     contactdiv.classList.add("is-visible");
   }, 800);
@@ -139,6 +152,7 @@ projet1.addEventListener("click", function() {
   contactdiv.classList.remove("is-visible");
   hairfaxdiv.classList.remove("is-visible");
   kapdiv.classList.remove("is-visible");
+  geekdiv.classList.remove('is-visible');
   setTimeout(function() {
     feeddiv.classList.add("is-visible");
   }, 800);
@@ -151,6 +165,7 @@ projet2.addEventListener("click", function() {
   contactdiv.classList.remove("is-visible");
   feeddiv.classList.remove("is-visible");
   kapdiv.classList.remove("is-visible");
+  geekdiv.classList.remove('is-visible');
   setTimeout(function() {
     hairfaxdiv.classList.add("is-visible");
   }, 800);
@@ -163,8 +178,22 @@ projet3.addEventListener("click", function() {
   contactdiv.classList.remove("is-visible");
   feeddiv.classList.remove("is-visible");
   hairfaxdiv.classList.remove("is-visible");
+  geekdiv.classList.remove('is-visible');
   setTimeout(function() {
     kapdiv.classList.add("is-visible");
+  }, 800);
+});
+
+projet4.addEventListener("click", function() {
+  h1home.classList.add("is-hidden");
+  aboutdiv.classList.remove("is-visible");
+  projetdiv.classList.remove("is-visible");
+  contactdiv.classList.remove("is-visible");
+  hairfaxdiv.classList.remove("is-visible");
+  kapdiv.classList.remove("is-visible");
+  feeddiv.classList.remove("is-visible");
+  setTimeout(function() {
+    geekdiv.classList.add('is-visible');
   }, 800);
 });
 
@@ -175,9 +204,11 @@ barOnMouseOver(cvbar, cv);
 barOnMouseOver(feedbar, feedlien);
 barOnMouseOver(hairfaxbar, hairfaxlien);
 barOnMouseOver(kapbar, kaplien);
+barOnMouseOver(geekbar, geeklien);
 
 setTimeout(function() {
   easter.classList.add("is-easter");
+  old.classList.add("is-easter");
 }, 60000);
 
 easter.addEventListener("click", function(e) {
@@ -212,4 +243,8 @@ easter.addEventListener("click", function(e) {
     "xpro2"
   ];
   gram.className = tabcss[randNb];
+});
+
+old.addEventListener('click', function(){
+  document.body.classList.toggle('lcd');
 });

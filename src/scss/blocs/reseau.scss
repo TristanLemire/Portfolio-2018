@@ -8,6 +8,8 @@
   height: 20vh;
   background-color: $bgcolor;
   padding: 10px;
+  transition: .5s;
+
 
   &.is-night {
     background-color: $nightbgcolor;
@@ -16,9 +18,35 @@
   a {
     color: $fontcolor;
     text-decoration: none;
+    transition: color .5s;
 
     i {
       font-size: 14px;
     }
+
+    &:hover {
+      color: rgb(248, 229, 203);
+      text-shadow: 0px 0px 20px tan;
+    }
   }
+}
+
+.li1:before {
+  font-family: "Font Awesome 5 Brands"; content: "\f099";
+}
+
+.li2:before {
+  font-family: "Font Awesome 5 Brands"; content: "\f0e1";
+}
+
+.li3:before {
+  font-family: "Font Awesome 5 Brands"; content: "\f09b";
+}
+
+.li4:before {
+  font-family: "Font Awesome 5 Brands"; content: "\f16d";
+}
+
+.li5:before {
+  font-family: "Font Awesome 5 Brands"; content: "\f1cb";
 }
