@@ -251,7 +251,7 @@ barOnMouseOver(geekbar, geeklien);
 setTimeout(function() {
   easter.classList.add("is-easter");
   old.classList.add("is-easter");
-}, 60000);
+}, 3000);
 
 easter.addEventListener("click", function(e) {
   e.preventDefault();
