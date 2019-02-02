@@ -1,0 +1,18 @@
+.sound__Button {
+  color: $fontcolor;
+  text-decoration: none;
+  position: absolute;
+  left: 155px;
+  bottom: 29px;
+  transform: position(-50%, -50%);
+  cursor: pointer;
+  padding: 0 10px 0 10px;
+}
+.sound__Button::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f026";
+  transition: 1s;
+}
+
+.sound__Button.is-on::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f028";
+}

@@ -1,3 +1,4 @@
+import { globalAgent } from "http";
 
 function barOnMouseOver(bar, h2) {
   h2.addEventListener("mouseover", function() {
@@ -19,6 +20,16 @@ function blurOnMouseOver(over, other1, other2,other3) {
     other2.classList.remove("is-not-blur");
     other3.classList.remove('is-not-blur');
   });
+}
+
+function soundOver(buttonMenu){
+  buttonMenu.addEventListener('mouseenter', function(){
+    SoundMenu.play();
+  })
+  buttonMenu.addEventListener('mouseleave', function(){
+    SoundMenu.pause();
+    SoundMenu.currentTime = 0;
+  })
 }
 
 
@@ -64,6 +75,37 @@ let kaplien = document.getElementById("kaplien");
 let geekdiv = document.getElementById("geekdiv");
 let geekbar = document.getElementById("geek__bar");
 let geeklien = document.getElementById("geeklien");
+let sound = document.getElementById('Sound');
+let soundButton = document.getElementById('soundButton');
+let SoundMenu = document.getElementById('SoundMenu');
+let fog = document.getElementById('fog');
+
+
+var isPlaying = false;
+sound.volume = 0.1;
+// SoundMenu.volume = 0.0;
+soundButton.addEventListener('click', function(){
+  if (isPlaying) {
+    sound.pause();
+    isPlaying = false;
+    soundButton.classList.remove('is-on');
+    fog.classList.remove('is-up');
+    // SoundMenu.volume = 0.0;
+  } else {
+    sound.play();
+    isPlaying = true;
+    soundButton.classList.add('is-on');
+    fog.classList.add('is-up');
+    // SoundMenu.volume = 0.005;
+  }
+});
+
+// soundOver(h2top);
+// soundOver(h2left);
+// soundOver(h2right);
+
+
+
 
 if (time >= 19 || time <= 7) {
   nightmode.classList.toggle("is-night");
