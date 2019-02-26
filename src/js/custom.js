@@ -80,25 +80,36 @@ let soundButton = document.getElementById('soundButton');
 let SoundMenu = document.getElementById('SoundMenu');
 let fog = document.getElementById('fog');
 
-
-var isPlaying = false;
-sound.volume = 0.1;
-// SoundMenu.volume = 0.0;
-soundButton.addEventListener('click', function(){
-  if (isPlaying) {
-    sound.pause();
-    isPlaying = false;
-    soundButton.classList.remove('is-on');
-    fog.classList.remove('is-up');
-    // SoundMenu.volume = 0.0;
-  } else {
-    sound.play();
-    isPlaying = true;
-    soundButton.classList.add('is-on');
-    fog.classList.add('is-up');
-    // SoundMenu.volume = 0.005;
-  }
-});
+var fakecharge = document.getElementById('fake-charge')
+var elem = document.getElementById("myBar"); 
+    var width = 1;
+    var id = setInterval(frame, 20);
+    function frame() {
+        if (width >= 100) {
+          fakecharge.classList.add('is-hidden');
+        } else {
+            width++; 
+            elem.style.width = width + '%'; 
+        }
+    }
+// var isPlaying = false;
+// sound.volume = 0.5;
+// // SoundMenu.volume = 0.0;
+// soundButton.addEventListener('click', function(){
+//   if (isPlaying) {
+//     sound.pause();
+//     isPlaying = false;
+//     soundButton.classList.remove('is-on');
+//     fog.classList.remove('is-up');
+//     // SoundMenu.volume = 0.0;
+//   } else {
+//     sound.play();
+//     isPlaying = true;
+//     soundButton.classList.add('is-on');
+//     fog.classList.add('is-up');
+//     // SoundMenu.volume = 0.005;
+//   }
+// });
 
 // soundOver(h2top);
 // soundOver(h2left);

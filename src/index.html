@@ -15,29 +15,37 @@
     />
 
     <meta name="keywords" content="Tristan Lemire Portfolio" />
+    <script defer src="./js/custom.js"></script>
     <link rel="icon" href="./img/tristan.svg" />
     <link rel="stylesheet" href="./scss/style.scss" />
-    <script defer src="./js/custom.js"></script>
-
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
+    
+
+    
   </head>
   <body>
-      <div id="fog" class="fog"></div>
+      <div class="fake-charge" id="fake-charge">
+          <img src="./img/LOGOlemire.png">
+          <div id="myProgress">
+              <div id="myBar"></div>
+          </div>
+    </div> 
+      <!-- <div id="fog" class="fog"></div> -->
       <div class="transitionScreen" id="blackscreen"></div>
-    <audio src="./audio/music.mp3" id="Sound" loop></audio>
+    <!-- <audio src="./audio/music.mp3" id="Sound" loop></audio> -->
     <!-- <audio src="./audio/background_02_hold.ac257c12.mp3" id="SoundMenu"></audio> -->
     <main>
       <div class="mayfair" id="gram">
-          <a
+          <!-- <a
           title="Twitter"
           id="soundButton"
           class="sound__Button"
-        ></a>
+        ></a> -->
         <svg
           class="logo"
           id="logo"
@@ -190,7 +198,7 @@
           <div class="border__white">
             <div class="home">
               <h1 id="h1home">
-                <span>Tristan Lemire</span><br />Front-end developer <br />
+                <span>Tristan Lemire</span><br />Web developer <br />
                 and Heticien
               </h1>
             </div>
@@ -201,7 +209,7 @@
                 freshman web bachelor student at
                 <a class="hetic__lien" href="https://www.hetic.net/">HETIC</a> ,
                 and I'm currently looking for an apprenticeship contract in
-                front-end development. Besides of HETIC, I graduated for a BTS
+                front-end or back-end development. Besides of HETIC, I graduated for a BTS
                 SIO (IT Service Organization) SLAM option, which made me learn
                 basics of web development.
               </p>
@@ -329,10 +337,10 @@
           </div>
         </section>
         <p class="nightmode" id="nightmode">Switch mode</p>
-        -
         <p class="easter" id="easter">🥚</p>
         <p class="old" id="old">📺</p>
       </div>
     </main>
   </body>
 </html>
+
