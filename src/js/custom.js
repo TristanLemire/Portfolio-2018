@@ -80,18 +80,18 @@ let soundButton = document.getElementById('soundButton');
 let SoundMenu = document.getElementById('SoundMenu');
 let fog = document.getElementById('fog');
 
-// var fakecharge = document.getElementById('fake-charge')
-// var elem = document.getElementById("myBar"); 
-//     var width = 1;
-//     var id = setInterval(frame, 20);
-//     function frame() {
-//         if (width >= 100) {
-//           fakecharge.classList.add('is-hidden');
-//         } else {
-//             width++; 
-//             elem.style.width = width + '%'; 
-//         }
-//     }
+var fakecharge = document.getElementById('fake-charge')
+var elem = document.getElementById("myBar"); 
+    var width = 1;
+    var id = setInterval(frame, 20);
+    function frame() {
+        if (width >= 100) {
+          fakecharge.classList.add('is-hidden');
+        } else {
+            width++; 
+            elem.style.width = width + '%'; 
+        }
+    }
 
 // var isPlaying = false;
 // sound.volume = 0.5;
