@@ -10,8 +10,9 @@
   align-items: center;
   text-align: center;
   opacity: 0;
-  transition: opacity 0.8s;
+  transition: opacity .8s, z-index .8s;
   z-index: 0;
+
 
   p {
     color: $fontcolor;

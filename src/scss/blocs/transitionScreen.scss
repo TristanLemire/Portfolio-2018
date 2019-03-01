@@ -4,7 +4,7 @@
   width: 100vw;
   position: absolute;
   z-index: 11;
-  transition: 2s;
+  transition: transform 2s;
   
 
   &.is-moved {
@@ -12,7 +12,7 @@
   }
 
   @include phone {
-    transition: 2s;
+    transition: transform 2s;
 
     &.is-moved {
       transform: translateX(100%);
