@@ -6,7 +6,7 @@
   height: 100vh;
   overflow: hidden;
   pointer-events: none;
-  opacity: 0;
+  opacity: .3;
   transition: opacity 6s;
   &:before, &:after {
     content: "";
