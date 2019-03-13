@@ -254,11 +254,11 @@ projet4.addEventListener("click", function() {
 barOnMouseOver(topbar, h2top);
 barOnMouseOver(rightbar, h2right);
 barOnMouseOver(leftbar, h2left);
-barOnMouseOver(cvbar, cv);
-barOnMouseOver(feedbar, feedlien);
-barOnMouseOver(hairfaxbar, hairfaxlien);
-barOnMouseOver(kapbar, kaplien);
-barOnMouseOver(geekbar, geeklien);
+// barOnMouseOver(cvbar, cv);
+// barOnMouseOver(feedbar, feedlien);
+// barOnMouseOver(hairfaxbar, hairfaxlien);
+// barOnMouseOver(kapbar, kaplien);
+// barOnMouseOver(geekbar, geeklien);
 
 setTimeout(function() {
   easter.classList.add("is-easter");
@@ -327,8 +327,9 @@ let cursor = {
       let self = this;
       
       // Anchor hovering
-      document.querySelectorAll('a').forEach(function(el) {
-          el.addEventListener('mouseover', function() {
+      let buttonTab = [h2left,h2right,h2top];
+      buttonTab.forEach(function(el) {
+          el.addEventListener('mouseenter', function() {
               self.cursorEnlarged = true;
               self.toggleCursorSize();
           });
@@ -337,6 +338,27 @@ let cursor = {
               self.toggleCursorSize();
           });
       });
+
+      document.querySelectorAll('a').forEach(function(el) {
+        el.addEventListener('mouseenter', function() {
+            self.cursorEnlarged = true;
+            self.toggleCursorSize();
+        });
+        el.addEventListener('mouseout', function() {
+            self.cursorEnlarged = false;
+            self.toggleCursorSize();
+        });
+    });
+
+      logo.addEventListener('mouseenter', function() {
+          self.cursorEnlarged = true;
+          self.toggleCursorSize();
+      });
+      logo.addEventListener('mouseout', function() {
+          self.cursorEnlarged = false;
+          self.toggleCursorSize();
+      });
+
       
       // Click events
       document.addEventListener('mousedown', function() {
@@ -392,7 +414,7 @@ let cursor = {
       
       if (self.cursorEnlarged) {
           self.$dot.style.transform = 'translate(-50%, -50%) scale(0.75)';
-          self.$outline.style.transform = 'translate(-50%, -50%) scale(1.5)';
+          self.$outline.style.transform = 'translate(-50%, -50%) scale(3)';
       } else {
           self.$dot.style.transform = 'translate(-50%, -50%) scale(1)';
           self.$outline.style.transform = 'translate(-50%, -50%) scale(1)';
