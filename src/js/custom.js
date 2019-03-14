@@ -434,4 +434,7 @@ let cursor = {
   }
 };
 
-cursor.init();
+if(screen.width >= 900){
+  cursor.init();
+}
+
