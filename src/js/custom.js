@@ -287,7 +287,7 @@ barOnMouseOver(leftbar, h2left);
 // barOnMouseOver(geekbar, geeklien);
 
 setTimeout(function() {
-  easter.classList.add("is-easter");
+  // easter.classList.add("is-easter");
   old.classList.add("is-easter");
 }, 3000);
 
