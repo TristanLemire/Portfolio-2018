@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-129083184-1');
+    </script>
     <meta charset="UTF-8" />
     <title>Tristan Lemire | Portfolio</title>
 
@@ -50,9 +57,7 @@
         <svg
           class="logo"
           id="logo"
-          alt="logo-tristan-lemire"
           version="1.1"
-          id="Calque_1"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px"
@@ -240,6 +245,7 @@
                 <li><a class="hairfax" id="projet2">HAIRFAX</a></li>
                 <li><a class="geekmension" id="projet4">GEEKMENSION</a></li>
                 <li><a class="feed" id="projet3">KAP-TOURISME</a></li>
+                <li><a class="feed" id="projet5">MARVELOUS BOT</a></li>
               </ul>
             </div>
             <div role="article" class="contact__div" id="contactdiv">
@@ -317,6 +323,20 @@
                 target="_blank"
                 >Kap-Tourisme website
                 <div class="button__bar" id="kap__bar"></div
+              ></a>
+            </div>
+            <div role="article" class="marvelous__div" id="marvelousdiv">
+              <h2>Marvelous Bot - 2019</h2>
+              <p>Marvelous Bot is a side project I made with the will to learn PHP, MySQL, <a target="_blank" class="marvelous__liens" href="https://developer.twitter.com/en/docs.html">Twitter API</a> (with Abraham Library,<a target="_blank" class="marvelous__liens" href="https://github.com/abraham/twitteroauth">Twitteroauth</a>). Thanks to this project, I managed to handle a lot of datas and to create sort scripts.</p>
+              <p>For this bot, I also used <a target="_blank" class="marvelous__liens" href="https://developer.marvel.com/">Marvel's API</a> to make it work.</p>
+              <a
+                rel="noreferrer"
+                href="https://twitter.com/MarvelousBot?lang=fr"
+                id="marvelouslien"
+                class="button__lien"
+                target="_blank"
+                >Marvelous Bot
+                <div class="button__bar" id="marvelous__bar"></div
               ></a>
             </div>
             <div role="article" class="geek__div" id="geekdiv">

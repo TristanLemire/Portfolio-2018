@@ -9,16 +9,18 @@ function barOnMouseOver(bar, h2) {
   });
 }
 
-function blurOnMouseOver(over, other1, other2,other3) {
+function blurOnMouseOver(over, other1, other2,other3,other4) {
   over.addEventListener("mouseover", function() {
     other1.classList.add("is-not-blur");
     other2.classList.add("is-not-blur");
     other3.classList.add('is-not-blur');
+    other4.classList.add('is-not-blur');
   });
   over.addEventListener("mouseout", function() {
     other1.classList.remove("is-not-blur");
     other2.classList.remove("is-not-blur");
     other3.classList.remove('is-not-blur');
+    other4.classList.remove('is-not-blur');
   });
 }
 
@@ -57,6 +59,7 @@ let projet1 = document.getElementById("projet1");
 let projet2 = document.getElementById("projet2");
 let projet3 = document.getElementById("projet3");
 let projet4= document.getElementById("projet4");
+let projet5= document.getElementById("projet5");
 var ladate = new Date();
 var time = ladate.getHours();
 var gram = document.getElementById("gram");
@@ -64,6 +67,7 @@ var easter = document.getElementById("easter");
 var old = document.getElementById("old");
 var blackscreen = document.getElementById("blackscreen");
 var feeddiv = document.getElementById("feeddiv");
+var marvelousdiv = document.getElementById("marvelousdiv");
 let feedbar = document.getElementById("feed__bar");
 let feedlien = document.getElementById("feedlien");
 var hairfaxdiv = document.getElementById("hairfaxdiv");
@@ -129,10 +133,11 @@ if (time >= 19 || time <= 7) {
   maincontent.classList.toggle("is-night");
 }
 
-blurOnMouseOver(projet1,projet2,projet3,projet4);
-blurOnMouseOver(projet2,projet1,projet3,projet4);
-blurOnMouseOver(projet3,projet2,projet1,projet4);
-blurOnMouseOver(projet4,projet2,projet1,projet3);
+blurOnMouseOver(projet1,projet2,projet3,projet4,projet5);
+blurOnMouseOver(projet2,projet1,projet3,projet4,projet5);
+blurOnMouseOver(projet3,projet2,projet1,projet4,projet5);
+blurOnMouseOver(projet4,projet2,projet1,projet3,projet5);
+blurOnMouseOver(projet5,projet2,projet1,projet3,projet4);
 
 nightmode.addEventListener("click", function() {
   blackscreen.classList.toggle("is-moved");
@@ -152,6 +157,7 @@ h2top.addEventListener("click", function() {
   h1home.classList.add("is-hidden");
   contactdiv.classList.remove("is-visible");
   feeddiv.classList.remove("is-visible");
+  marvelousdiv.classList.remove("is-visible");
   hairfaxdiv.classList.remove("is-visible");
   kapdiv.classList.remove("is-visible");
   geekdiv.classList.remove('is-visible');
@@ -165,6 +171,7 @@ logo.addEventListener("click", function() {
   contactdiv.classList.remove("is-visible");
   projetdiv.classList.remove("is-visible");
   feeddiv.classList.remove("is-visible");
+  marvelousdiv.classList.remove("is-visible");
   hairfaxdiv.classList.remove("is-visible");
   kapdiv.classList.remove("is-visible");
   geekdiv.classList.remove('is-visible');
@@ -181,6 +188,7 @@ h2left.addEventListener("click", function() {
   hairfaxdiv.classList.remove("is-visible");
   kapdiv.classList.remove("is-visible");
   geekdiv.classList.remove('is-visible');
+  marvelousdiv.classList.remove('is-visible');
   setTimeout(function() {
     aboutdiv.classList.add("is-visible");
   }, 800);
@@ -191,6 +199,7 @@ h2right.addEventListener("click", function() {
   aboutdiv.classList.remove("is-visible");
   projetdiv.classList.remove("is-visible");
   feeddiv.classList.remove("is-visible");
+  marvelousdiv.classList.remove("is-visible");
   hairfaxdiv.classList.remove("is-visible");
   kapdiv.classList.remove("is-visible");
   geekdiv.classList.remove('is-visible');
@@ -212,12 +221,27 @@ projet1.addEventListener("click", function() {
   }, 800);
 });
 
+projet5.addEventListener("click", function() {
+  h1home.classList.add("is-hidden");
+  aboutdiv.classList.remove("is-visible");
+  projetdiv.classList.remove("is-visible");
+  contactdiv.classList.remove("is-visible");
+  hairfaxdiv.classList.remove("is-visible");
+  kapdiv.classList.remove("is-visible");
+  geekdiv.classList.remove('is-visible');
+  feeddiv.classList.remove("is-visible");
+  setTimeout(function() {
+    marvelousdiv.classList.add("is-visible");
+  }, 800);
+});
+
 projet2.addEventListener("click", function() {
   h1home.classList.add("is-hidden");
   aboutdiv.classList.remove("is-visible");
   projetdiv.classList.remove("is-visible");
   contactdiv.classList.remove("is-visible");
   feeddiv.classList.remove("is-visible");
+  marvelousdiv.classList.remove("is-visible");
   kapdiv.classList.remove("is-visible");
   geekdiv.classList.remove('is-visible');
   setTimeout(function() {
@@ -231,6 +255,7 @@ projet3.addEventListener("click", function() {
   projetdiv.classList.remove("is-visible");
   contactdiv.classList.remove("is-visible");
   feeddiv.classList.remove("is-visible");
+  marvelousdiv.classList.remove("is-visible");
   hairfaxdiv.classList.remove("is-visible");
   geekdiv.classList.remove('is-visible');
   setTimeout(function() {
@@ -246,6 +271,7 @@ projet4.addEventListener("click", function() {
   hairfaxdiv.classList.remove("is-visible");
   kapdiv.classList.remove("is-visible");
   feeddiv.classList.remove("is-visible");
+  marvelousdiv.classList.remove("is-visible");
   setTimeout(function() {
     geekdiv.classList.add('is-visible');
   }, 800);
