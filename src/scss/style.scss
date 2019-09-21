@@ -1,31 +1,32 @@
-@import './vendors/cssgram.min.scss';
-@import './vendors/reset.scss';
-@import './config/colors.scss';
-@import './config/mixins.scss';
-@import './config/fonts.scss';
-@import './global/layout.scss';
-@import './blocs/transitionScreen.scss';
-@import './blocs/logo.scss';
-@import './blocs/top__menu.scss';
-@import './blocs/right__menu.scss';
-@import './blocs/left__menu.scss';
-@import './blocs/reseau.scss';
-@import './blocs/main__content.scss';
-@import './blocs/home.scss';
-@import './blocs/feed__div.scss';
-@import './blocs/hairfax__div.scss';
-@import './blocs/kap__div.scss';
-@import './blocs/about__div.scss';
-@import './blocs/button__lien.scss';
-@import './blocs/contact__div.scss';
-@import './blocs/nightmode.scss';
-@import './blocs/easter.scss';
-@import './blocs/projet__div.scss';
-@import './blocs/geek__div.scss';
-@import './blocs/sound__button.scss';
-@import './blocs/fog.scss';
-@import './config/cursor.scss';
-@import './blocs/marvelous_div.scss';
+@import "./vendors/cssgram.min.scss";
+@import "./vendors/reset.scss";
+@import "./config/colors.scss";
+@import "./config/mixins.scss";
+@import "./config/fonts.scss";
+@import "./global/layout.scss";
+@import "./blocs/transitionScreen.scss";
+@import "./blocs/logo.scss";
+@import "./blocs/top__menu.scss";
+@import "./blocs/right__menu.scss";
+@import "./blocs/left__menu.scss";
+@import "./blocs/reseau.scss";
+@import "./blocs/main__content.scss";
+@import "./blocs/home.scss";
+@import "./blocs/feed__div.scss";
+@import "./blocs/hairfax__div.scss";
+@import "./blocs/kap__div.scss";
+@import "./blocs/about__div.scss";
+@import "./blocs/button__lien.scss";
+@import "./blocs/contact__div.scss";
+@import "./blocs/nightmode.scss";
+@import "./blocs/easter.scss";
+@import "./blocs/projet__div.scss";
+@import "./blocs/geek__div.scss";
+@import "./blocs/sound__button.scss";
+@import "./blocs/fog.scss";
+@import "./config/cursor.scss";
+@import "./blocs/marvelous_div.scss";
+@import "./blocs/center__div.scss";
 
 h2 {
   color: $fontcolor;
@@ -42,23 +43,23 @@ h2 {
   opacity: 1;
   z-index: 11;
   visibility: visible;
-} 
+}
 
 .fake-charge {
   position: absolute;
   height: 100vh;
   width: 100%;
-  background-color:$bgcolor;
+  background-color: $bgcolor;
   z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   opacity: 1;
-  transition: opacity .8s, z-index 4s;
+  transition: opacity 0.8s, z-index 4s;
 }
 
-.fake-charge.is-hidden{
+.fake-charge.is-hidden {
   opacity: 0;
   z-index: -20;
 }
@@ -78,11 +79,3 @@ h2 {
   background-color: $fontcolor;
   border-radius: 50px;
 }
-
-
-
-
-
-
-
-

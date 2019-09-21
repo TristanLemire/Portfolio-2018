@@ -9,18 +9,20 @@ function barOnMouseOver(bar, h2) {
   });
 }
 
-function blurOnMouseOver(over, other1, other2,other3,other4) {
+function blurOnMouseOver(over, other1, other2,other3,other4,other5) {
   over.addEventListener("mouseover", function() {
     other1.classList.add("is-not-blur");
     other2.classList.add("is-not-blur");
     other3.classList.add('is-not-blur');
     other4.classList.add('is-not-blur');
+    other5.classList.add('is-not-blur');
   });
   over.addEventListener("mouseout", function() {
     other1.classList.remove("is-not-blur");
     other2.classList.remove("is-not-blur");
     other3.classList.remove('is-not-blur');
     other4.classList.remove('is-not-blur');
+    other5.classList.remove('is-not-blur');
   });
 }
 
@@ -60,6 +62,7 @@ let projet2 = document.getElementById("projet2");
 let projet3 = document.getElementById("projet3");
 let projet4= document.getElementById("projet4");
 let projet5= document.getElementById("projet5");
+let projet6= document.getElementById("projet6");
 var ladate = new Date();
 var time = ladate.getHours();
 var gram = document.getElementById("gram");
@@ -76,6 +79,9 @@ let hairfaxlien = document.getElementById("hairfaxlien");
 var kapdiv = document.getElementById("kapdiv");
 let kapbar = document.getElementById("kap__bar");
 let kaplien = document.getElementById("kaplien");
+var centerdiv = document.getElementById("centerdiv");
+let centerbar = document.getElementById("center__bar");
+let centerlien = document.getElementById("centerlien");
 let geekdiv = document.getElementById("geekdiv");
 let geekbar = document.getElementById("geek__bar");
 let geeklien = document.getElementById("geeklien");
@@ -133,11 +139,12 @@ if (time >= 19 || time <= 7) {
   maincontent.classList.toggle("is-night");
 }
 
-blurOnMouseOver(projet1,projet2,projet3,projet4,projet5);
-blurOnMouseOver(projet2,projet1,projet3,projet4,projet5);
-blurOnMouseOver(projet3,projet2,projet1,projet4,projet5);
-blurOnMouseOver(projet4,projet2,projet1,projet3,projet5);
-blurOnMouseOver(projet5,projet2,projet1,projet3,projet4);
+blurOnMouseOver(projet1,projet2,projet3,projet4,projet5,projet6);
+blurOnMouseOver(projet2,projet1,projet3,projet4,projet5,projet6);
+blurOnMouseOver(projet3,projet2,projet1,projet4,projet5,projet6);
+blurOnMouseOver(projet4,projet2,projet1,projet3,projet5,projet6);
+blurOnMouseOver(projet5,projet2,projet1,projet3,projet4,projet6);
+blurOnMouseOver(projet6,projet2,projet1,projet3,projet4,projet5);
 
 nightmode.addEventListener("click", function() {
   blackscreen.classList.toggle("is-moved");
@@ -152,6 +159,21 @@ nightmode.addEventListener("click", function() {
   }, 525);
 });
 
+projet6.addEventListener("click", function() {
+  aboutdiv.classList.remove("is-visible");
+  h1home.classList.add("is-hidden");
+  contactdiv.classList.remove("is-visible");
+  feeddiv.classList.remove("is-visible");
+  marvelousdiv.classList.remove("is-visible");
+  hairfaxdiv.classList.remove("is-visible");
+  kapdiv.classList.remove("is-visible");
+  geekdiv.classList.remove('is-visible');
+  projetdiv.classList.remove("is-visible");
+  setTimeout(function() {
+    centerdiv.classList.add("is-visible");
+  }, 800);
+});
+
 h2top.addEventListener("click", function() {
   aboutdiv.classList.remove("is-visible");
   h1home.classList.add("is-hidden");
@@ -160,6 +182,7 @@ h2top.addEventListener("click", function() {
   marvelousdiv.classList.remove("is-visible");
   hairfaxdiv.classList.remove("is-visible");
   kapdiv.classList.remove("is-visible");
+  centerdiv.classList.remove("is-visible");
   geekdiv.classList.remove('is-visible');
   setTimeout(function() {
     projetdiv.classList.add("is-visible");
@@ -175,6 +198,7 @@ logo.addEventListener("click", function() {
   hairfaxdiv.classList.remove("is-visible");
   kapdiv.classList.remove("is-visible");
   geekdiv.classList.remove('is-visible');
+  centerdiv.classList.remove("is-visible");
   setTimeout(function() {
     h1home.classList.remove("is-hidden");
   }, 800);
@@ -189,6 +213,7 @@ h2left.addEventListener("click", function() {
   kapdiv.classList.remove("is-visible");
   geekdiv.classList.remove('is-visible');
   marvelousdiv.classList.remove('is-visible');
+  centerdiv.classList.remove("is-visible");
   setTimeout(function() {
     aboutdiv.classList.add("is-visible");
   }, 800);
@@ -203,6 +228,7 @@ h2right.addEventListener("click", function() {
   hairfaxdiv.classList.remove("is-visible");
   kapdiv.classList.remove("is-visible");
   geekdiv.classList.remove('is-visible');
+  centerdiv.classList.remove("is-visible");
   setTimeout(function() {
     contactdiv.classList.add("is-visible");
   }, 800);
@@ -216,6 +242,7 @@ projet1.addEventListener("click", function() {
   hairfaxdiv.classList.remove("is-visible");
   kapdiv.classList.remove("is-visible");
   geekdiv.classList.remove('is-visible');
+  centerdiv.classList.remove("is-visible");
   setTimeout(function() {
     feeddiv.classList.add("is-visible");
   }, 800);
@@ -230,6 +257,7 @@ projet5.addEventListener("click", function() {
   kapdiv.classList.remove("is-visible");
   geekdiv.classList.remove('is-visible');
   feeddiv.classList.remove("is-visible");
+  centerdiv.classList.remove("is-visible");
   setTimeout(function() {
     marvelousdiv.classList.add("is-visible");
   }, 800);
@@ -244,6 +272,7 @@ projet2.addEventListener("click", function() {
   marvelousdiv.classList.remove("is-visible");
   kapdiv.classList.remove("is-visible");
   geekdiv.classList.remove('is-visible');
+  centerdiv.classList.remove("is-visible");
   setTimeout(function() {
     hairfaxdiv.classList.add("is-visible");
   }, 800);
@@ -258,6 +287,7 @@ projet3.addEventListener("click", function() {
   marvelousdiv.classList.remove("is-visible");
   hairfaxdiv.classList.remove("is-visible");
   geekdiv.classList.remove('is-visible');
+  centerdiv.classList.remove("is-visible");
   setTimeout(function() {
     kapdiv.classList.add("is-visible");
   }, 800);
@@ -272,6 +302,7 @@ projet4.addEventListener("click", function() {
   kapdiv.classList.remove("is-visible");
   feeddiv.classList.remove("is-visible");
   marvelousdiv.classList.remove("is-visible");
+  centerdiv.classList.remove("is-visible");
   setTimeout(function() {
     geekdiv.classList.add('is-visible');
   }, 800);

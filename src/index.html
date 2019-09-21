@@ -1,374 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-129083184-1');
-    </script>
-    <meta charset="UTF-8" />
-    <title>Tristan Lemire | Portfolio</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="description"
-      content="Personal portfolio of Tristan LEMIRE (2018) 
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-129083184-1');
+  </script>
+  <meta charset="UTF-8" />
+  <title>Tristan Lemire | Portfolio</title>
+  <meta itemprop="image" content="http://nsa40.casimages.com/img/2019/04/12">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description"
+    content="Personal portfolio of Tristan LEMIRE (2018) 
       - tristanlemirepro@gmail.com 
       - 06 58 10 08 80 
-      - Paris. Interests: Front-end, Back-end, HTML/CSS, Javascript, SASS, PHP, Python, Symfony, CodeIgniter, Mysql ect..."
-    />
-    <meta
-      name="google-site-verification"
-      content="google-site-verification=us-wtnkE4iF85hxnUfLuHF1Z3LtYbTC-eAKvdTokNnA"
-    />
+      - Paris. Interests: Front-end, Back-end, HTML/CSS, Javascript, SASS, PHP, Python, Symfony, CodeIgniter, Mysql ect..." />
+  <meta name="google-site-verification"
+    content="google-site-verification=us-wtnkE4iF85hxnUfLuHF1Z3LtYbTC-eAKvdTokNnA" />
 
-    <meta name="keywords" content="Tristan Lemire Portfolio" />
-    <script defer src="./js/custom.js"></script>
-    <link rel="icon" href="./img/LOGOlemire.png" />
-    <link rel="stylesheet" href="./scss/style.scss" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    
-    <!-- <div id="fog" class="fog"></div>  -->
-    <div class="transitionScreen" id="blackscreen"></div>
-    <!-- <audio src="./audio/music.mp3" id="Sound" loop></audio> -->
-    <!-- <audio src="./audio/background_02_hold.ac257c12.mp3" id="SoundMenu"></audio> -->
-    <main>
-      <div class="mayfair" id="gram">
-          <div class="cursor-dot-outline"></div>
-          <div class="cursor-dot"></div>
-          <div class="fake-charge" id="fake-charge">
-              <img src="./img/tristan.svg" alt="logo"/>
-              <div id="myProgress">
-                <div id="myBar"></div>
-              </div>
-            </div> 
-        <!-- <a
+  <meta name="keywords" content="Tristan Lemire Portfolio" />
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Tristan Lemire | Portfolio">
+  <meta itemprop="description"
+    content="Personal portfolio of Tristan LEMIRE (2018) 
+      - tristanlemirepro@gmail.com 
+      - 06 58 10 08 80 
+      - Paris. Interests: Front-end, Back-end, HTML/CSS, Javascript, SASS, PHP, Python, Symfony, CodeIgniter, Mysql ect...">
+  <meta itemprop="image" content="https://nsa40.casimages.com/img/2019/04/12//190412124712917987.png">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="http://www.tristanlemire.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tristan Lemire | Portfolio">
+  <meta property="og:description"
+    content="Personal portfolio of Tristan LEMIRE (2018) 
+      - tristanlemirepro@gmail.com 
+      - 06 58 10 08 80 
+      - Paris. Interests: Front-end, Back-end, HTML/CSS, Javascript, SASS, PHP, Python, Symfony, CodeIgniter, Mysql ect...">
+  <meta property="og:image" content="https://nsa40.casimages.com/img/2019/04/12//190412124712917987.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tristan Lemire | Portfolio">
+  <meta name="twitter:description"
+    content="Personal portfolio of Tristan LEMIRE (2018) 
+      - tristanlemirepro@gmail.com 
+      - 06 58 10 08 80 
+      - Paris. Interests: Front-end, Back-end, HTML/CSS, Javascript, SASS, PHP, Python, Symfony, CodeIgniter, Mysql ect...">
+  <meta name="twitter:image" content="https://nsa40.casimages.com/img/2019/04/12//190412124712917987.png">
+
+  <script defer src="./js/custom.js"></script>
+  <link rel="icon" href="./img/LOGOlemire.png" />
+  <link rel="stylesheet" href="./scss/style.scss" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <!-- <div id="fog" class="fog"></div>  -->
+  <div class="transitionScreen" id="blackscreen"></div>
+  <!-- <audio src="./audio/music.mp3" id="Sound" loop></audio> -->
+  <!-- <audio src="./audio/background_02_hold.ac257c12.mp3" id="SoundMenu"></audio> -->
+  <main>
+    <div class="mayfair" id="gram">
+      <div class="cursor-dot-outline"></div>
+      <div class="cursor-dot"></div>
+      <div class="fake-charge" id="fake-charge">
+        <img src="./img/tristan.svg" alt="logo" />
+        <div id="myProgress">
+          <div id="myBar"></div>
+        </div>
+      </div>
+      <!-- <a
 
           title="Twitter"
           id="soundButton"
           class="sound__Button"
         ></a> -->
-        <svg
-          class="logo"
-          id="logo"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          viewBox="0 0 29.09 19.52"
-          style="enable-background:new 0 0 29.09 19.52;"
-          xml:space="preserve"
-        >
+      <svg class="logo" id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 29.09 19.52"
+        style="enable-background:new 0 0 29.09 19.52;" xml:space="preserve">
+        <g>
           <g>
-            <g>
-              <path
-                d="M1.38,1.31C0.83,1.31,0.55,1.31,0,1.32c0-0.48,0-0.72,0-1.2c1.63,0,2.45,0,4.08,0c0,0.47,0,0.7,0,1.17
-             c-0.55,0-0.83,0.01-1.38,0.01c0,2.82,0,4.23,0,7.05C2.17,8.38,1.9,8.39,1.38,8.42C1.38,5.58,1.38,4.15,1.38,1.31z"
-              />
-              <path
-                d="M4.72,0.12c0.78,0,1.17,0,1.96,0c1.37,0,1.95,0.6,1.95,1.84c0,0.2,0,0.29,0,0.49c0,0.82-0.28,1.35-0.86,1.59
+            <path
+              d="M1.38,1.31C0.83,1.31,0.55,1.31,0,1.32c0-0.48,0-0.72,0-1.2c1.63,0,2.45,0,4.08,0c0,0.47,0,0.7,0,1.17
+             c-0.55,0-0.83,0.01-1.38,0.01c0,2.82,0,4.23,0,7.05C2.17,8.38,1.9,8.39,1.38,8.42C1.38,5.58,1.38,4.15,1.38,1.31z" />
+            <path d="M4.72,0.12c0.78,0,1.17,0,1.96,0c1.37,0,1.95,0.6,1.95,1.84c0,0.2,0,0.29,0,0.49c0,0.82-0.28,1.35-0.86,1.59
              c0,0.01,0,0.01,0,0.02c0.66,0.18,0.88,0.77,0.87,1.67c0,0.56,0,0.84,0,1.4c0,0.39,0.01,0.67,0.14,0.97
              C8.24,8.11,7.97,8.12,7.43,8.13c-0.07-0.2-0.12-0.33-0.12-0.98c0-0.59,0-0.88,0-1.47c0-0.75-0.23-0.98-0.83-0.97
              c-0.18,0-0.27,0.01-0.46,0.01c0,1.38,0,2.08,0,3.46C5.5,8.21,5.24,8.22,4.71,8.24C4.71,4.99,4.71,3.37,4.72,0.12z M6.51,3.57
              C7,3.56,7.3,3.35,7.3,2.71c0-0.25,0-0.37,0-0.62c0-0.57-0.2-0.82-0.67-0.82c-0.24,0-0.36,0-0.6,0c0,0.92,0,1.38,0,2.31
-             C6.22,3.57,6.32,3.57,6.51,3.57z"
-              />
-              <path
-                d="M9.55,0.11c0.53,0,0.79,0,1.32,0c0,3.17,0,4.76,0,7.93c-0.53,0.01-0.79,0.01-1.32,0.03C9.55,4.89,9.55,3.3,9.55,0.11z"
-              />
-              <path
-                d="M11.62,6.16c0-0.18,0-0.27,0-0.45c0.5,0,0.75-0.01,1.25-0.01c0,0.22,0,0.33,0,0.54C12.87,6.8,13.14,7,13.56,7
+             C6.22,3.57,6.32,3.57,6.51,3.57z" />
+            <path
+              d="M9.55,0.11c0.53,0,0.79,0,1.32,0c0,3.17,0,4.76,0,7.93c-0.53,0.01-0.79,0.01-1.32,0.03C9.55,4.89,9.55,3.3,9.55,0.11z" />
+            <path d="M11.62,6.16c0-0.18,0-0.27,0-0.45c0.5,0,0.75-0.01,1.25-0.01c0,0.22,0,0.33,0,0.54C12.87,6.8,13.14,7,13.56,7
              c0.42,0,0.68-0.2,0.68-0.79c0-0.66-0.27-1.07-1.13-1.78c-1.1-0.91-1.46-1.55-1.46-2.46c0-1.25,0.68-1.97,1.97-1.97
              s1.92,0.72,1.92,1.99c0,0.13,0,0.2,0,0.33c-0.5,0-0.75,0-1.25,0c0-0.16,0-0.24,0-0.41c0-0.56-0.24-0.78-0.66-0.78
              c-0.42,0-0.66,0.22-0.66,0.76c0,0.58,0.28,0.99,1.14,1.7c1.1,0.91,1.45,1.55,1.45,2.53c0,1.29-0.7,2-1.99,2.01
-             C12.27,8.14,11.62,7.42,11.62,6.16z"
-              />
-              <path
-                d="M17.35,1.24c-0.55,0-0.83,0-1.38,0c0-0.45,0-0.68,0-1.13c1.63,0,2.45,0,4.08,0c0,0.46,0,0.68,0,1.14
-             c-0.55,0-0.83,0-1.38,0c0,2.72,0,4.08,0,6.81c-0.53-0.01-0.79-0.01-1.32-0.02C17.35,5.32,17.35,3.96,17.35,1.24z"
-              />
-              <path
-                d="M21.16,0.11c0.71,0,1.07,0,1.79,0c0.55,3.23,0.82,4.85,1.37,8.13C23.79,8.22,23.53,8.21,23,8.18
+             C12.27,8.14,11.62,7.42,11.62,6.16z" />
+            <path
+              d="M17.35,1.24c-0.55,0-0.83,0-1.38,0c0-0.45,0-0.68,0-1.13c1.63,0,2.45,0,4.08,0c0,0.46,0,0.68,0,1.14
+             c-0.55,0-0.83,0-1.38,0c0,2.72,0,4.08,0,6.81c-0.53-0.01-0.79-0.01-1.32-0.02C17.35,5.32,17.35,3.96,17.35,1.24z" />
+            <path d="M21.16,0.11c0.71,0,1.07,0,1.79,0c0.55,3.23,0.82,4.85,1.37,8.13C23.79,8.22,23.53,8.21,23,8.18
              c-0.1-0.64-0.14-0.97-0.24-1.61c0,0.01,0,0.01,0,0.02c-0.6-0.02-0.9-0.03-1.5-0.04c-0.1,0.62-0.14,0.94-0.24,1.56
              c-0.49-0.01-0.73-0.02-1.22-0.03C20.34,4.91,20.61,3.32,21.16,0.11z M22.6,5.5c-0.24-1.6-0.35-2.4-0.59-3.98
-             c-0.01,0-0.01,0-0.02,0c-0.23,1.59-0.34,2.38-0.57,3.96C21.89,5.48,22.12,5.49,22.6,5.5z"
-              />
-              <path
-                d="M24.95,0.12c0.66,0,0.99,0,1.66,0c0.51,1.97,0.77,2.97,1.28,4.98c0.01,0,0.01,0,0.02,0c0-1.99,0-2.99,0-4.98
+             c-0.01,0-0.01,0-0.02,0c-0.23,1.59-0.34,2.38-0.57,3.96C21.89,5.48,22.12,5.49,22.6,5.5z" />
+            <path d="M24.95,0.12c0.66,0,0.99,0,1.66,0c0.51,1.97,0.77,2.97,1.28,4.98c0.01,0,0.01,0,0.02,0c0-1.99,0-2.99,0-4.98
              c0.47,0,0.71,0,1.18,0c0,3.36,0,5.04,0,8.4c-0.54-0.04-0.81-0.05-1.35-0.09c-0.63-2.47-0.95-3.68-1.59-6.09c-0.01,0-0.01,0-0.02,0
-             c0,2.4,0,3.6,0,6c-0.47-0.03-0.7-0.04-1.17-0.06C24.95,5.01,24.95,3.38,24.95,0.12z"
-              />
-              <path
-                d="M1.99,10.95c0.53-0.04,0.79-0.06,1.32-0.1c0,2.81,0,4.22-0.01,7.03c0.87-0.1,1.3-0.14,2.17-0.22c0,0.46,0,0.69,0,1.16
-             c-1.4,0.14-2.09,0.22-3.48,0.41C1.98,15.92,1.98,14.26,1.99,10.95z"
-              />
-              <path
-                d="M6.11,10.69c1.44-0.07,2.16-0.1,3.6-0.15c0,0.45,0,0.68,0,1.14c-0.91,0.03-1.37,0.05-2.28,0.09c0,0.85,0,1.27,0,2.12
+             c0,2.4,0,3.6,0,6c-0.47-0.03-0.7-0.04-1.17-0.06C24.95,5.01,24.95,3.38,24.95,0.12z" />
+            <path d="M1.99,10.95c0.53-0.04,0.79-0.06,1.32-0.1c0,2.81,0,4.22-0.01,7.03c0.87-0.1,1.3-0.14,2.17-0.22c0,0.46,0,0.69,0,1.16
+             c-1.4,0.14-2.09,0.22-3.48,0.41C1.98,15.92,1.98,14.26,1.99,10.95z" />
+            <path
+              d="M6.11,10.69c1.44-0.07,2.16-0.1,3.6-0.15c0,0.45,0,0.68,0,1.14c-0.91,0.03-1.37,0.05-2.28,0.09c0,0.85,0,1.27,0,2.12
              c0.72-0.04,1.09-0.06,1.81-0.09c0,0.46,0,0.68,0,1.14c-0.73,0.03-1.09,0.05-1.81,0.1c0,0.99,0,1.48,0,2.46
-             c0.91-0.07,1.37-0.09,2.28-0.14c0,0.45,0,0.68,0,1.14c-1.44,0.08-2.16,0.13-3.6,0.26C6.11,15.53,6.11,13.91,6.11,10.69z"
-              />
-              <path
-                d="M10.47,10.52c0.75-0.02,1.13-0.03,1.89-0.04c0.34,2.26,0.5,3.39,0.84,5.65c0.01,0,0.01,0,0.02,0
+             c0.91-0.07,1.37-0.09,2.28-0.14c0,0.45,0,0.68,0,1.14c-1.44,0.08-2.16,0.13-3.6,0.26C6.11,15.53,6.11,13.91,6.11,10.69z" />
+            <path
+              d="M10.47,10.52c0.75-0.02,1.13-0.03,1.89-0.04c0.34,2.26,0.5,3.39,0.84,5.65c0.01,0,0.01,0,0.02,0
              c0.34-2.27,0.51-3.4,0.84-5.66c0.75,0,1.13,0,1.89,0.01c0,3.16,0,4.74,0,7.91c-0.5-0.01-0.75-0.01-1.25-0.01c0-2.39,0-3.59,0-5.98
              c-0.01,0-0.01,0-0.02,0c-0.38,2.39-0.58,3.59-0.96,5.99c-0.44,0-0.66,0.01-1.11,0.02c-0.38-2.39-0.58-3.58-0.96-5.97
-             c-0.01,0-0.01,0-0.02,0c0,2.4,0,3.6,0,6c-0.46,0.01-0.69,0.02-1.15,0.04C10.47,15.28,10.47,13.7,10.47,10.52z"
-              />
-              <path
-                d="M16.94,10.49c0.53,0.01,0.79,0.01,1.32,0.02c0,3.17,0,4.76,0,7.94c-0.53-0.02-0.79-0.03-1.32-0.04
-             C16.94,15.24,16.94,13.65,16.94,10.49z"
-              />
-              <path
-                d="M19.24,10.54c0.78,0.02,1.17,0.04,1.96,0.07c1.37,0.06,1.96,0.7,1.96,1.95c0,0.2,0,0.3,0,0.5c0,0.83-0.27,1.34-0.86,1.53
+             c-0.01,0-0.01,0-0.02,0c0,2.4,0,3.6,0,6c-0.46,0.01-0.69,0.02-1.15,0.04C10.47,15.28,10.47,13.7,10.47,10.52z" />
+            <path d="M16.94,10.49c0.53,0.01,0.79,0.01,1.32,0.02c0,3.17,0,4.76,0,7.94c-0.53-0.02-0.79-0.03-1.32-0.04
+             C16.94,15.24,16.94,13.65,16.94,10.49z" />
+            <path d="M19.24,10.54c0.78,0.02,1.17,0.04,1.96,0.07c1.37,0.06,1.96,0.7,1.96,1.95c0,0.2,0,0.3,0,0.5c0,0.83-0.27,1.34-0.86,1.53
              c0,0.01,0,0.01,0,0.02c0.66,0.24,0.88,0.86,0.88,1.77c0,0.57,0,0.85,0,1.42c0,0.39,0.01,0.68,0.14,0.99
              c-0.54-0.05-0.81-0.07-1.34-0.12c-0.07-0.21-0.12-0.34-0.12-1c0-0.59,0-0.88,0-1.47c0-0.75-0.23-1-0.83-1.04
              c-0.18-0.01-0.27-0.02-0.46-0.03c0,1.37,0,2.05,0,3.42c-0.53-0.03-0.79-0.05-1.32-0.08C19.25,15.31,19.24,13.72,19.24,10.54z
               M21.05,14.03c0.49,0.03,0.79-0.16,0.79-0.8c0-0.25,0-0.37,0-0.62c0-0.57-0.2-0.84-0.67-0.86c-0.24-0.01-0.36-0.02-0.6-0.03
-             c0,0.91,0,1.37,0,2.28C20.76,14.01,20.85,14.02,21.05,14.03z"
-              />
-              <path
-                d="M24.08,10.75c1.44,0.08,2.16,0.13,3.59,0.25c0,0.47,0,0.71,0,1.19c-0.91-0.08-1.36-0.12-2.27-0.19c0,0.86,0,1.3,0,2.16
+             c0,0.91,0,1.37,0,2.28C20.76,14.01,20.85,14.02,21.05,14.03z" />
+            <path
+              d="M24.08,10.75c1.44,0.08,2.16,0.13,3.59,0.25c0,0.47,0,0.71,0,1.19c-0.91-0.08-1.36-0.12-2.27-0.19c0,0.86,0,1.3,0,2.16
              c0.72,0.06,1.08,0.1,1.81,0.17c0,0.47,0,0.71,0,1.18c-0.72-0.08-1.08-0.12-1.81-0.19c0,1,0,1.51,0,2.51
-             c0.91,0.1,1.36,0.16,2.27,0.28c0,0.47,0,0.71,0,1.19c-1.43-0.2-2.15-0.29-3.59-0.44C24.09,15.62,24.08,13.99,24.08,10.75z"
-              />
-            </g>
+             c0.91,0.1,1.36,0.16,2.27,0.28c0,0.47,0,0.71,0,1.19c-1.43-0.2-2.15-0.29-3.59-0.44C24.09,15.62,24.08,13.99,24.08,10.75z" />
           </g>
-        </svg>
-        <div class="logo__background" id="logo-bg"></div>
+        </g>
+      </svg>
+      <div class="logo__background" id="logo-bg"></div>
 
-        <div class="top__menu" id="top__menu">
-          <h2 id="h2__top">Projects</h2>
-          <div class="top__bar" id="top__bar"></div>
-        </div>
-
-        <div class="right__menu" id="right__menu">
-          <div class="right__bar" id="right__bar"></div>
-          <h2 id="h2__right">contact</h2>
-        </div>
-
-        <div class="left__menu" id="left__menu">
-          <div class="left__bar" id="left__bar"></div>
-          <h2 id="h2__left">about</h2>
-        </div>
-
-        <ul class="reseau" id="reseau">
-          <li>
-            <a
-              title="Twitter"
-              id="li1"
-              class="li1"
-              href="https://twitter.com/LemireTristan3?lang=fr"
-              target="_blank"
-            ></a>
-          </li>
-          <li>
-            <a
-              title="linkedin"
-              id="li2"
-              class="li2"
-              href="https://www.linkedin.com/in/tristan-lemire-129099124/"
-              target="_blank"
-            ></a>
-          </li>
-          <li>
-            <a
-              title="github"
-              id="li3"
-              class="li3"
-              href="https://github.com/TristanLemire"
-              target="_blank"
-            ></a>
-          </li>
-          <li>
-            <a
-              title="instagram"
-              id="li4"
-              class="li4"
-              href="https://www.instagram.com/zen_hits/?hl=fr"
-              target="_blank"
-            ></a>
-          </li>
-          <li>
-            <a
-              title="codepen"
-              id="li5"
-              class="li5"
-              href="https://codepen.io/dashboard/"
-              target="_blank"
-            ></a>
-          </li>
-        </ul>
-
-        <section class="main__content" id="main__content">
-          <div class="border__white">
-            <div class="home">
-              <h1 id="h1home">
-                <span>Tristan Lemire</span><br />Web developer <br />
-                and Heticien
-              </h1>
-            </div>
-            <div role="article" class="about__div" id="aboutdiv">
-              <h2>About me</h2>
-              <p>
-                Hi! I'm Tristan Lemire, a web developer based in Paris. I'm a
-                freshman web bachelor student at
-                <a class="hetic__lien" href="https://www.hetic.net/">HETIC</a> ,
-                and I'm currently looking for an apprenticeship contract in
-                front-end or back-end development. Besides of HETIC, I graduated
-                for a BTS SIO (IT Service Organization) SLAM option, which made
-                me learn basics of web development.
-              </p>
-              <p>
-                During my spare time, I love to learn trends of the web
-                development, to play piano and video games, to create digital
-                art on Photoshop, or hang out with friends and watch TV shows on
-                Netflix.
-              </p>
-              <a
-                href="img/Tristan-Lemire-CV.pdf"
-                id="cv"
-                class="button__lien"
-                target="_blank"
-                >Résumé
-                <div class="button__bar" id="cv__bar"></div
-              ></a>
-            </div>
-            <div role="article" class="projet__div" id="projetdiv">
-              <ul>
-                <li><a class="feed" id="projet1">FEED</a></li>
-                <li><a class="hairfax" id="projet2">HAIRFAX</a></li>
-                <li><a class="geekmension" id="projet4">GEEKMENSION</a></li>
-                <li><a class="feed" id="projet3">KAP-TOURISME</a></li>
-                <li><a class="feed" id="projet5">MARVELOUS BOT</a></li>
-              </ul>
-            </div>
-            <div role="article" class="contact__div" id="contactdiv">
-              <h2>CONTACT ME</h2>
-              <p>Talk to me</p>
-              <a href="mailto:tristanlemirepro@gmail.com"
-                >Mail: <span>tristanlemirepro@gmail.com</span></a
-              >
-              <a href="tel:+0658100880">Phone: <span>06 58 10 08 80</span></a>
-            </div>
-            <div role="article" class="feed__div" id="feeddiv">
-              <h2>FEED - 2018</h2>
-              <p>
-                Feed is a project created during a intense week of front-end
-                development.
-              </p>
-              <p>
-                The goal of this project was to make a website with precise
-                functional specifications. This website was made in HTML5, CSS3,
-                Javascript and with 2 librairies JS (waypoint.js and relax.js).
-              </p>
-              <a
-                rel="noreferrer"
-                href="https://awesome-feynman-6c0e31.netlify.com/"
-                id="feedlien"
-                class="button__lien"
-                target="_blank"
-                >Feed website
-                <div class="button__bar" id="feed__bar"></div
-              ></a>
-            </div>
-            <div role="article" class="hairfax__div" id="hairfaxdiv">
-              <h2>HAIRFAX - 2017</h2>
-              <p>
-                He Hairfax project is a revision of the site of the company
-                Hairfax. This one wishing to set up a marketing campaign strong
-                in France
-              </p>
-              <p>
-                For that purpose, my objective was created a CodeIgniter
-                back-service which includes: Forms with the framework BonFire,
-                an administrator of images, the implementation of Web service
-                and The implementation of the module of search with Google map.
-              </p>
-              <p>
-                Furthermore I learnt to use API OVH to create automatically
-                sub-domains for every institute to create.
-              </p>
-              <a
-                rel="noreferrer"
-                href="https://www.hairfax.fr/instituts"
-                id="hairfaxlien"
-                class="button__lien"
-                target="_blank"
-                >Hairfax website
-                <div class="button__bar" id="hairfax__bar"></div
-              ></a>
-            </div>
-            <div role="article" class="kap__div" id="kapdiv">
-              <h2>KAP-TOURISME - 2016</h2>
-              <p>
-                Kap-Tourisme is a project made under CodeIgniter. I've made this
-                project during my first internship in a french agency, Kaféin
-                Studio.
-              </p>
-              <p>
-                My main task was to add a new date management module with jQuery
-                and Ajax.
-              </p>
-              <a
-                rel="noreferrer"
-                href="https://www.kap-tourisme.fr/"
-                id="kaplien"
-                class="button__lien"
-                target="_blank"
-                >Kap-Tourisme website
-                <div class="button__bar" id="kap__bar"></div
-              ></a>
-            </div>
-            <div role="article" class="marvelous__div" id="marvelousdiv">
-              <h2>Marvelous Bot - 2019</h2>
-              <p>Marvelous Bot is a side project I made with the will to learn PHP, MySQL, <a target="_blank" class="marvelous__liens" href="https://developer.twitter.com/en/docs.html">Twitter API</a> (with Abraham Library,<a target="_blank" class="marvelous__liens" href="https://github.com/abraham/twitteroauth">Twitteroauth</a>). Thanks to this project, I managed to handle a lot of datas and to create sort scripts.</p>
-              <p>For this bot, I also used <a target="_blank" class="marvelous__liens" href="https://developer.marvel.com/">Marvel's API</a> to make it work.</p>
-              <a
-                rel="noreferrer"
-                href="https://twitter.com/MarvelousBot?lang=fr"
-                id="marvelouslien"
-                class="button__lien"
-                target="_blank"
-                >Marvelous Bot
-                <div class="button__bar" id="marvelous__bar"></div
-              ></a>
-            </div>
-            <div role="article" class="geek__div" id="geekdiv">
-              <h2>GEEKMENSION - 2018</h2>
-              <p>
-                GeekMension is a project created during a intense week of
-                javascript development.
-              </p>
-              <p>
-                The goal of this project was to make a video game. This video
-                game was made in HTML5, SCSS, Javascript.
-              </p>
-              <a
-                rel="noreferrer"
-                href="https://hetic-w1p2021-02-bowser.netlify.com/"
-                id="geeklien"
-                class="button__lien"
-                target="_blank"
-                >GEEKmension
-                <div class="button__bar" id="geek__bar"></div
-              ></a>
-            </div>
-          </div>
-        </section>
-        <a class="nightmode" id="nightmode">Switch mode</a>
-        <a class="easter" id="easter">Change color</a>
-        <a class="old" id="old">📺</a>
+      <div class="top__menu" id="top__menu">
+        <h2 id="h2__top">Projects</h2>
+        <div class="top__bar" id="top__bar"></div>
       </div>
-    </main>
-  </body>
+
+      <div class="right__menu" id="right__menu">
+        <div class="right__bar" id="right__bar"></div>
+        <h2 id="h2__right">contact</h2>
+      </div>
+
+      <div class="left__menu" id="left__menu">
+        <div class="left__bar" id="left__bar"></div>
+        <h2 id="h2__left">about</h2>
+      </div>
+
+      <ul class="reseau" id="reseau">
+        <li>
+          <a title="Twitter" id="li1" class="li1" href="https://twitter.com/LemireTristan3?lang=fr" target="_blank"></a>
+        </li>
+        <li>
+          <a title="linkedin" id="li2" class="li2" href="https://www.linkedin.com/in/tristan-lemire-129099124/"
+            target="_blank"></a>
+        </li>
+        <li>
+          <a title="github" id="li3" class="li3" href="https://github.com/TristanLemire" target="_blank"></a>
+        </li>
+        <li>
+          <a title="instagram" id="li4" class="li4" href="https://www.instagram.com/zen_hits/?hl=fr"
+            target="_blank"></a>
+        </li>
+        <li>
+          <a title="codepen" id="li5" class="li5" href="https://codepen.io/dashboard/" target="_blank"></a>
+        </li>
+      </ul>
+
+      <section class="main__content" id="main__content">
+        <div class="border__white">
+          <div class="home">
+            <h1 id="h1home">
+              <span>Tristan Lemire</span><br />Web developer <br />
+              and Heticien
+            </h1>
+          </div>
+          <div role="article" class="about__div" id="aboutdiv">
+            <h2>About me</h2>
+            <p>
+              Hi! I'm Tristan Lemire, a web developer based in Paris. I'm a
+              freshman web bachelor student at
+              <a class="hetic__lien" href="https://www.hetic.net/">HETIC</a> ,
+              and I'm currently looking for an apprenticeship contract in
+              front-end or back-end development. Besides of HETIC, I graduated
+              for a BTS SIO (IT Service Organization) SLAM option, which made
+              me learn basics of web development.
+            </p>
+            <p>
+              During my spare time, I love to learn trends of the web
+              development, to play piano and video games, to create digital
+              art on Photoshop, or hang out with friends and watch TV shows on
+              Netflix.
+            </p>
+            <a href="img/Tristan-Lemire-CV.pdf" id="cv" class="button__lien" target="_blank">Résumé
+              <div class="button__bar" id="cv__bar"></div></a>
+          </div>
+          <div role="article" class="projet__div" id="projetdiv">
+            <ul>
+              <li><a class="feed" id="projet1">FEED</a></li>
+              <li><a class="hairfax" id="projet2">HAIRFAX</a></li>
+              <li><a class="centermars" id="projet6">CENTER MARS</a></li>
+              <li><a class="geekmension" id="projet4">GEEKMENSION</a></li>
+              <li><a class="feed" id="projet3">KAP-TOURISME</a></li>
+              <li><a class="feed" id="projet5">MARVELOUS BOT</a></li>
+            </ul>
+          </div>
+          <div role="article" class="contact__div" id="contactdiv">
+            <h2>CONTACT ME</h2>
+            <p>Talk to me</p>
+            <a href="mailto:tristanlemirepro@gmail.com">Mail: <span>tristanlemirepro@gmail.com</span></a>
+            <a href="tel:+0658100880">Phone: <span>06 58 10 08 80</span></a>
+          </div>
+          <div role="article" class="feed__div" id="feeddiv">
+            <h2>FEED - 2018</h2>
+            <p>
+              Feed is a project created during a intense week of front-end
+              development.
+            </p>
+            <p>
+              The goal of this project was to make a website with precise
+              functional specifications. This website was made in HTML5, CSS3,
+              Javascript and with 2 librairies JS (waypoint.js and relax.js).
+            </p>
+            <a rel="noreferrer" href="https://awesome-feynman-6c0e31.netlify.com/" id="feedlien" class="button__lien"
+              target="_blank">Feed website
+              <div class="button__bar" id="feed__bar"></div></a>
+          </div>
+          <div role="article" class="hairfax__div" id="hairfaxdiv">
+            <h2>HAIRFAX - 2017</h2>
+            <p>
+              He Hairfax project is a revision of the site of the company
+              Hairfax. This one wishing to set up a marketing campaign strong
+              in France
+            </p>
+            <p>
+              For that purpose, my objective was created a CodeIgniter
+              back-service which includes: Forms with the framework BonFire,
+              an administrator of images, the implementation of Web service
+              and The implementation of the module of search with Google map.
+            </p>
+            <p>
+              Furthermore I learnt to use API OVH to create automatically
+              sub-domains for every institute to create.
+            </p>
+            <a rel="noreferrer" href="https://www.hairfax.fr/instituts" id="hairfaxlien" class="button__lien"
+              target="_blank">Hairfax website
+              <div class="button__bar" id="hairfax__bar"></div></a>
+          </div>
+          <div role="article" class="kap__div" id="kapdiv">
+            <h2>KAP-TOURISME - 2016</h2>
+            <p>
+              Kap-Tourisme is a project made under CodeIgniter. I've made this
+              project during my first internship in a french agency, Kaféin
+              Studio.
+            </p>
+            <p>
+              My main task was to add a new date management module with jQuery
+              and Ajax.
+            </p>
+            <a rel="noreferrer" href="https://www.kap-tourisme.fr/" id="kaplien" class="button__lien"
+              target="_blank">Kap-Tourisme website
+              <div class="button__bar" id="kap__bar"></div></a>
+          </div>
+          <div role="article" class="marvelous__div" id="marvelousdiv">
+            <h2>Marvelous Bot - 2019</h2>
+            <p>Marvelous Bot is a side project I made with the will to learn PHP, MySQL, <a target="_blank"
+                class="marvelous__liens" href="https://developer.twitter.com/en/docs.html">Twitter API</a> (with Abraham
+              Library,<a target="_blank" class="marvelous__liens"
+                href="https://github.com/abraham/twitteroauth">Twitteroauth</a>). Thanks to this project, I managed to
+              handle a lot of datas and to create sort scripts.</p>
+            <p>For this bot, I also used <a target="_blank" class="marvelous__liens"
+                href="https://developer.marvel.com/">Marvel's API</a> to make it work.</p>
+            <a rel="noreferrer" href="https://twitter.com/MarvelousBot?lang=fr" id="marvelouslien" class="button__lien"
+              target="_blank">Marvelous Bot
+              <div class="button__bar" id="marvelous__bar"></div></a>
+          </div>
+          <div role="article" class="geek__div" id="geekdiv">
+            <h2>GEEKMENSION - 2018</h2>
+            <p>
+              GeekMension is a project created during a intense week of
+              javascript development.
+            </p>
+            <p>
+              The goal of this project was to make a video game. This video
+              game was made in HTML5, SCSS, Javascript.
+            </p>
+            <a rel="noreferrer" href="https://hetic-w1p2021-02-bowser.netlify.com/" id="geeklien" class="button__lien"
+              target="_blank">GEEKmension
+              <div class="button__bar" id="geek__bar"></div></a>
+          </div>
+          <div role="article" class="center__div" id="centerdiv">
+            <h2>CENTER MARS - 2018</h2>
+            <p>
+              Kap-Tourisme is a project made under CodeIgniter. I've made this
+              project during my first internship in a french agency, Kaféin
+              Studio.
+            </p>
+            <p>
+              My main task was to add a new date management module with jQuery
+              and Ajax.
+            </p>
+            <a rel="noreferrer" href="https://www.kap-tourisme.fr/" id="centerlien" class="button__lien"
+              target="_blank">Kap-Tourisme website
+              <div class="button__bar" id="center__bar"></div></a>
+          </div>
+        </div>
+      </section>
+      <a class="nightmode" id="nightmode">Switch mode</a>
+      <a class="easter" id="easter">Change color</a>
+      <a class="old" id="old">📺</a>
+    </div>
+  </main>
+</body>
+
 </html>
